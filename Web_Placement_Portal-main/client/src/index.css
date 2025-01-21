@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center
+    }
+    .flex-col-center {
+        @apply flex flex-col justify-center items-center
+    }
+
+    .flex-btwn-center{
+        @apply flex justify-between items-center
+    }
+
+}
+
+
